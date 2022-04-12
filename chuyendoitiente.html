@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<table align="center">
+    <th>Amount</th>
+    <th>From Currency</th>
+    <th>To Currency</th>
+    <tr>
+        <td><input type="text" id="amount"></td>
+        <td><select  id="FromCurrency" >
+            <option value="1">VND</option>
+            <option value="24000">USD</option>
+            <option value="3600">TrungQuoc</option>
+        </select></td>
+        <td><select  id="ToCurrency" >
+            <option value="1">VND</option>
+            <option value="24000">USD</option>
+            <option value="3600">TrungQuoc</option>
+        </select></td></br>
+       <td><button onclick="doitien()">Convert</button></td>
+
+    </tr>
+
+</table>
+
+
+</form>
+</body>
+<script>
+    function doitien()
+    {
+        let tien1 = document.getElementById("amount").value
+        let menhgia1 = document.getElementById("FromCurrency").value
+        let menhgia2 = document.getElementById("ToCurrency").value
+        let tigia= menhgia1/menhgia2
+        alert("Resul :" +tien1*tigia)
+    }
+</script>
+</html>
