@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="number"id="vatly">vật lý</input><br>
+<input type="number"id="hoahoc">hóa học</input><br>
+<input type="number"id="sinhhoc">sinh học</input><br>
+<button onclick="dtb()">Điểm Trung Bình</button>
+<button onclick="dt()">Điểm Tổng</button>
+</body>
+<script>
+    function dt(){
+        let diemly =document.getElementById("vatly").value
+        let diemhoa =document.getElementById("hoahoc").value
+        let diemsinh =document.getElementById("sinhhoc").value
+        let dt = parseInt(diemly)+parseInt(diemhoa)+parseInt(diemsinh)
+        alert("Resul :"+dt)
+    }
+    function dtb(){
+
+        let diemly =document.getElementById("vatly").value
+        let diemhoa =document.getElementById("hoahoc").value
+        let diemsinh =document.getElementById("sinhhoc").value
+        let dtb = (parseInt(diemly) +parseInt(diemhoa) + parseInt(diemsinh))/3
+        alert("Resul :"+dtb)
+
+    }
+</script>
+</html>
