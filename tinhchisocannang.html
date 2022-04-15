@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let weightbody =Number(prompt('input weight (kg):',''))
+    let heighbody =Number(prompt('input heigh (m):',''))
+    let bmi = weightbody/(heighbody ^2);
+    if (bmi<18)
+        document.write("underweight");
+    else if (bmi < 25.0)
+        document.write("Normal");
+    else if (bmi <30.0)
+        document.write("Overweight");
+    else
+        document.write("Obese");
+</script>
+
+</body>
+</html>
